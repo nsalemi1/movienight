@@ -1,0 +1,264 @@
+/* NICHOLAS SALEMI  */
+
+/* ------------------------------------------CSS RESET-------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------------ ROOT VARIABLES -------*/
+:root {
+    --skyBlue: #90A9B0;
+    --offWhite: #EFEAD2; 
+    --sunflower: #C4AD5D; 
+    --deepGray: #2e3435;
+    --gray: #d1d2d2;
+    --lightGray: #EFEFEF;
+}
+/* ------------------------------------------ CSS STYLES -------*/
+body {
+    background-color: var(--lightGray);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--deepGray);
+    display: flex;
+    gap: 2rem;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 1.5rem; 
+}
+
+h1 {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 3rem;
+    color: var(--sunflower);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: .25rem 0rem .25rem 0rem;
+}
+
+#moreMovies {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-family: "Poppins", sans-serif;
+    padding: .25rem 0rem .25rem 0rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: .25rem 0rem .25rem 0rem;
+}
+
+p, small {
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+p {
+    padding: .25rem 0rem .25rem 0rem;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+small {
+    color: var(--sunflower);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.required {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+li a {
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--sunflower);
+}
+
+#aboutSec {
+    background-color: var(--sunflower);
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+#aboutSec p {
+    padding: 0rem;
+}
+
+#aboutDivs {
+    display: flex;
+    gap: 2rem ;
+    padding: 2rem;
+
+}
+
+#topRatedMoviesSec {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+#topRatedMoviesDiv , #watchLaterDiv{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+}
+
+#searchResults {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.resultingMovies {
+    padding: 1rem;
+    text-align: center;
+}
+.resultingMovies div {
+    padding: 1rem;
+}
+
+#watchLaterSec {
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+form {
+    padding: .5rem;
+}
+
+form #mTitle {
+    padding: .25rem;
+    width: 400px;
+    font-family: "Poppins", sans-serif;
+}
+
+#watchLaterSubmit , #watchLaterRemove {
+    font-family: "Poppins", sans-serif;
+    padding: .25rem;
+}
+
+.hideMessage {
+    display: none; 
+}
+
+.showMessage {
+    color: red;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#staffPicksSec {
+    background-color: var(--gray);
+    padding: 2rem;
+}
+
+#staffPicksDiv {
+    padding: 2rem;
+}
+
+.moviePoster {
+    text-align: center;
+}
+
+.staffPick {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; 
+    align-items: center;
+    height: 455px;
+}
+
+img {
+    width: 300px; 
+    height: 450px;
+    border-radius: 5px;
+}
+
+#moreMoviesSec {
+    padding: 2rem;
+}
+
+#moreMoviesDiv {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+}
+
+.slick-slide {
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--deepGray);
+    padding: 1rem;
+    text-align: center;
+}

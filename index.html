@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicholas Salemi">
+	<meta name="description" content="Having trouble finding what to watch on your next movie night? Look no further!">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Poppins:wght@300;400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+	<script  src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script  src="slick/slick.min.js"></script>
+    <title>Movie Night</title>
+</head>
+<body>
+    <header>
+		<div id="websiteTitle">
+			<h1>Movie Night</h1>
+		</div>
+		<div id="mainNav">
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#topRatedMovies">Top Rated Movies</a></li>
+					<li><a href="#watchLater">Watch Later</a></li>
+					<li><a href="#staffPicks">Staff Picks</a></li>
+					<li><a href="#moreMovies">More Movies</a></li>          
+				</ul>
+			</nav>
+		</div>
+    </header>
+    <main>
+		<section id="aboutSec">
+			<div id="aboutDivs">
+				<div id="aboutHeader">
+					<h2 id="about">About</h2>
+				</div>
+				<div id="aboutParagraph">
+					<p>Not sure what to watch next ? Then you've come to the right place! 
+					Whether you're headed to the theaters, or streaming at home, 
+					our website is designed to help you get ready for your next <span class="italic">movie night</span>.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="topRatedMoviesSec">
+			<div id="topRatedMoviesDiv">
+				<h2 id="topRatedMovies">Top Rated Movies</h2>
+				<p>Top-tier movies for a top-tier movie night!</p>
+				<div id="searchResults"></div>
+			</div>
+		</section>
+	
+
+		<section id="watchLaterSec">
+			<div id="watchLaterDiv">
+				<h2 id="watchLater">Watch Later</h2>
+				<p>Found something you wanna watch, great! You can save it here, so you don't forget about it later. </p>
+	
+				<form>
+					<label for="mTitle">Enter a movie title here<span class="required">*</span></label>
+					<input type="text" name="mTitle" id="mTitle">
+					<input type="submit" name="watchLaterSubmit" id="watchLaterSubmit">
+					<input type="submit" name="watchLaterRemove" id="watchLaterRemove" value="Remove">
+				</form>
+	
+				<span id="errorSpan" class="hideMessage">Please enter a movie title before submitting.</span>
+				<span id="removalError" class="hideMessage">You have to submit a movie title first before you can remove it.</span>
+	
+				<p id="watchThisLater" class="italic" ></p>
+			</div>
+		</section> 
+	
+
+		
+		<section id="staffPicksSec">
+			<div id="staffPicksDiv">
+				<h2 id="staffPicks">Staff Picks</h2>
+				<p>Still can't seem to find a flick, <span class="italic">don't sweat it !</span> Go with one of our staff picks instead.</p>
+				<div id="accordion">
+					<h3>In the mood for something <span class= "italic">scary</span> ?</h3>
+					<div class = "staffPick ">
+						<div class= "staffQuote">
+							<h4>Scream (1996)</h4>
+							<p>
+								"I'm usually too much a of a chicken to watch these kinds of movies, but in my opinion this movie isn't as scary as it is suspenseful. Slasher films are
+								notorious for having bad acting, but Neve Campbell and Courtney Cox give stellar performances. Sure, it has its corny moments, but its clever writing and 
+								90's charm make it a great choice for any movie night."<br>
+								-<span class="italic">Spike Spiegel</span>
+							  </p>
+						</div>
+						<div class="moviePoster">
+							<img src="images/scream.jpg" alt="Movie poster for Scream">
+						</div>
+					</div>
+	
+					<h3>In the mood for something <span class= "italic">funny</span> ?</h3>
+					<div class = "staffPick ">
+						<div class= "staffQuote">
+							<h4>Shrek 2 (2004)</h4>
+							<p>
+								"It's not often that a sequel comes along and outdoes the original, but Shrek 2 is the exception. The movie is heartfelt, funny, and not to mention beautifully animated.
+								It's definitely a must watch!"<br>
+								-<span class="italic">Jet Black</span>
+								</p>
+						</div>
+						<div class="moviePoster">
+							<img src="images/shrek2.jpg" alt="Movie poster for Shrek 2">
+						</div>
+					</div>
+	
+					<h3>In the mood for <span class= "italic">romantic</span> ?</h3>
+					<div class = "staffPick ">
+						<div class= "staffQuote">
+							<h4>My Best Friend's Wedding (1997)</h4>
+							<p>
+								"This movie might look like another predictable "chick-flick," but it's actually far from it.
+								It has comedy, drama, romance, and Julia Roberts. This movie has it all!"<br>
+								-<span class="italic">Faye Valentine</span>
+							</p>
+						</div>
+						<div class="moviePoster">
+							<img src="images/myBestFriendsWedding.jpg" alt="Movie poster for My Best Friend's Wedding">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="moreMoviesSec">
+			<div id="moreMoviesDiv">
+				<h2 id="moreMovies">More Movies</h2>
+				<div class="imgCarousel">
+					<div><img src="images/coraline.jpg" alt="Movie poster for Coraline"></div>
+					<div><img src="images/porcoRosso.jpg" alt="Movie poster for Porco Rosso"></div>
+					<div><img src="images/meetTheRobinsons.jpg" alt="Movie poster for Meet The Robinsons"></div>
+					<div><img src="images/cowboyBebopMovie.jpg" alt="Movie poster for Cowboy Bebop Movie"></div>
+					<div><img src="images/theSilenceOfTheLambs.jpg" alt="Movie poster for The Silence of The Lambs"></div>
+					<div><img src="images/perfectBlue.jpg" alt="Movie poster for Perfect Blue"></div>
+					<div><img src="images/lastHoliday.jpg" alt="Movie poster for Last Holiday"></div>
+					<div><img src="images/rushHour.jpg" alt="Movie poster for Rush Hour"></div>
+				</div>
+			</div>
+		</section> 
+    </main>
+
+    <footer>
+		<small> ©2022 MovieNight / Nicholas Salemi </small>
+    </footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
